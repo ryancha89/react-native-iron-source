@@ -187,7 +187,7 @@ RCT_EXPORT_METHOD(destroyBanner) {
             bannerY = viewController.view.frame.size.height - bannerSize.height / 2 - bottomSafeAreaLength;
         } else if ([self->position isEqualToString:@"top"]) {
             CGFloat topSafeAreaLength = [self getTopSafeAreaLength];
-            bannerY = topSafeAreaLength + bannerSize.height / 2 - 180;
+            bannerY = topSafeAreaLength + bannerSize.height / 2 - 350;
         }
 
         self.bannerView.center = CGPointMake(bannerX, bannerY);
