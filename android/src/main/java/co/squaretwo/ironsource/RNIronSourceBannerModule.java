@@ -177,7 +177,7 @@ public class RNIronSourceBannerModule extends ReactContextBaseJavaModule impleme
 
                     bannerLayout.setScaleX(scale);
                     bannerLayout.setScaleY(scale);
-                    bannerLayout.setTranslationY(translateY);
+                    bannerLayout.setTranslationY(translateY - 180);
 
                     bannerSize = Arguments.createMap();
                     bannerSize.putDouble("width", bannerWidth * scale);

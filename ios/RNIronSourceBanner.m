@@ -184,7 +184,7 @@ RCT_EXPORT_METHOD(destroyBanner) {
 
         if ([self->position isEqualToString:@"bottom"]) {
             CGFloat bottomSafeAreaLength = [self getBottomSafeAreaLength];
-            bannerY = viewController.view.frame.size.height - bannerSize.height / 2 - bottomSafeAreaLength;
+            bannerY = viewController.view.frame.size.height - bannerSize.height / 2 - bottomSafeAreaLength * 0.05;
         } else if ([self->position isEqualToString:@"top"]) {
             CGFloat topSafeAreaLength = [self getTopSafeAreaLength];
             bannerY = topSafeAreaLength + bannerSize.height / 2;
